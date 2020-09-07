@@ -1,0 +1,82 @@
+$black: #333333;
+$white: #f2f2f2;
+// $white: #333333;
+// $black: #f2f2f2;
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  color: $black;
+  cursor: none;
+  background: $white;
+  height: 100vh;
+}
+
+// Custom cursor
+.cursor {
+  position: fixed;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: $black;
+  border-radius: 50%;
+  //   backdrop-filter: blur(2px);
+  backdrop-filter: invert(100%) contrast(1000%);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: all 0.3s ease;
+  transition-property: background-color, transform;
+  transform-origin: 100% 100%;
+  mix-blend-mode: difference;
+  box-shadow: 0px 0px 2px 1px #24242444;
+  // Cursor hover
+  &-grow {
+    position: fixed;
+    transform: scale(2);
+    // background: #333;
+  }
+  // Cursor hover end
+}
+// Custom cursor end
+
+.navbar {
+  margin: 50px;
+  h1 {
+    margin-left: 30px;
+    color: $black;
+  }
+}
+nav {
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 700px;
+  & > div {
+    padding: 12px 20px;
+    // border: 1px solid #eeeeee;
+  }
+}
+
+section {
+  margin-top: 100px;
+  .front-cover {
+    width: 200px;
+    height: 200px;
+    img {
+      width: 100%;
+    }
+    &-description {
+      h2 {
+        margin: 0;
+        margin-top: 6px;
+        font-size: 24px;
+      }
+      p {
+        margin: 0;
+        font-size: 16px;
+      }
+    }
+  }
+}

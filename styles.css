@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins";
+  color: #333333;
+  cursor: none;
+  background: #f2f2f2;
+  height: 100vh;
+}
+
+.cursor {
+  position: fixed;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #333333;
+  border-radius: 50%;
+  -webkit-backdrop-filter: invert(100%) contrast(1000%);
+          backdrop-filter: invert(100%) contrast(1000%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  pointer-events: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transition-property: background-color, -webkit-transform;
+  transition-property: background-color, -webkit-transform;
+  transition-property: background-color, transform;
+  transition-property: background-color, transform, -webkit-transform;
+  -webkit-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+  mix-blend-mode: difference;
+  -webkit-box-shadow: 0px 0px 2px 1px #24242444;
+          box-shadow: 0px 0px 2px 1px #24242444;
+}
+
+.cursor-grow {
+  position: fixed;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+.navbar {
+  margin: 50px;
+}
+
+.navbar h1 {
+  margin-left: 30px;
+  color: #333333;
+}
+
+nav {
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 700px;
+}
+
+nav > div {
+  padding: 12px 20px;
+}
+
+section {
+  margin-top: 100px;
+}
+
+section .front-cover {
+  width: 200px;
+  height: 200px;
+}
+
+section .front-cover img {
+  width: 100%;
+}
+
+section .front-cover-description h2 {
+  margin: 0;
+  margin-top: 6px;
+  font-size: 24px;
+}
+
+section .front-cover-description p {
+  margin: 0;
+  font-size: 16px;
+}
+/*# sourceMappingURL=styles.css.map */
